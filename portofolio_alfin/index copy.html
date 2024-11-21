@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfin portfolio</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./ini_logo_huruf-saya.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <img class="logo" src="alfin_logo.svg" alt="">
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li>
+            <a href="Desainer Grafis.pdf" download="CV_Alfin.pdf" class="btn-download">Download CV</a>
+          </li>
+
+          <!-- Add this inside your <header> or <main> section -->
+        <button id="toggle-color" class="btn-toggle-color">Toggle Dark/Light Mode</button>
+            <script>
+              // script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.getElementById('toggle-color');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    // Toggle the class on body element
+    body.classList.toggle('dark-mode');
+  });
+});
+
+            </script>
+            <style>
+              /* style.css */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #4c508f65;
+  color: #fff;
+}
+
+.btn-toggle-color {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-toggle-color:hover {
+  background-color: #0056b3;
+}
+
+            </style>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <main>
+        <!-- #HOME -->
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero-banner">
+              <img src="./assets/images/al.jpeg" width="800" height="864" loading="lazy" alt="Alfin's Photo" class="img-cover">
+              <div class="elem elem-1">
+                <p class="elem-title">3</p>
+                <p class="elem-text">Tahun Sekolah</p>
+              </div>
+              <div class="elem elem-2">
+                <p class="elem-title">10+</p>
+                <p class="elem-text">Project Terselesaikan</p>
+              </div>
+              <div class="elem elem-3">
+                <ion-icon name="trophy"></ion-icon>
+              </div>
+            </div>
+            <div class="hero-content">
+              <h2 class="hero-title">
+                <span>Halo Saya</span>
+                <strong>ALFIN</strong> Web Developer from SMK 17 Agustus 1945 Surabaya
+              </h2>
+              <p class="hero-text">Saya adalah murid SMK 17 Agustus 1945 Surabaya</p>
+              <div class="btn-group">
+                <a href="#contact" class="btn btn-primary blue">kontak</a>
+                <a href="#about" class="btn">tentang saya</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+ <!-- #ABOUT -->
+<section class="section" id="about">
+  <div class="container" style="
+    max-width: 800px; /* Menetapkan lebar maksimum container */
+    margin: 0 auto; /* Memusatkan container */
+    padding: 40px 20px; /* Padding internal */
+    background-color: var(--independence); /* Latar belakang */
+    border-radius: var(--radius-20); /* Sudut melengkung */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Bayangan */
+  ">
+    <div class="about-inner" style="
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Mengurangi jarak antara foto dan teks */
+      flex-wrap: wrap; /* Membuat elemen responsif */
+      text-align: left; /* Teks di kiri untuk tampilan yang lebih baik */
+    ">
+      <div class="about-photo" style="
+        flex: 1; /* Memastikan foto menyesuaikan dengan ukuran kontainer */
+        max-width: 150px; /* Membatasi lebar maksimum gambar */
+      ">
+        <img src="./assets/images/al.jpeg" alt="Tentang Saya" class="about-img" style="
+          width: 100%; /* Menyesuaikan gambar dengan lebar kontainer */
+          height: auto; /* Mempertahankan rasio aspek gambar */
+          border-radius: var(--radius-15); /* Sudut melengkung untuk gambar */
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bayangan gambar */
+        ">
+      </div>
+      <div class="about-content" style="
+        flex: 2; /* Memberi lebih banyak ruang pada konten teks dibandingkan foto */
+      ">
+        <h2 style="
+          margin: 0 0 10px; /* Mengatur margin bawah judul */
+          font-size: 2vw; /* Ukuran font untuk judul */
+          color: var(--primary-color); /* Warna teks judul */
+        ">Tentang Saya</h2>
+        <p style="
+          margin: 0; /* Mengatur margin paragraf */
+          font-size: 0.9em; /* Ukuran font untuk paragraf */
+          color: var(--text-color); /* Warna teks paragraf */
+          line-height: 1.6; /* Jarak antar baris teks */
+        ">
+          Selamat datang di halaman tentang saya! Di sini, saya ingin berbagi sedikit informasi tentang diri saya dan perjalanan saya. Saya memiliki pengalaman dalam berbagai bidang, termasuk pengembangan web, desain, dan penelitian. Jika Anda tertarik untuk mengetahui lebih lanjut atau ingin berkolaborasi, jangan ragu untuk menghubungi saya.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+  <!-- Portfolio Section -->
+  <section class="section" id="portfolio">
+    <div class="container portfolio-container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-list">
+        <article class="portfolio-card">
+          <div class="portfolio-img-container">
+            <img src="./assets/images/image.png" alt="Ecommerce Project" class="portfolio-img">
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Ecommerce</h3>
+            <p class="portfolio-description">
+              This Ecommerce project features a comprehensive online shopping experience with product management, shopping cart, and payment gateway integration.
+            </p>
+            <a href="#" class="portfolio-link">View Project(BELUM SAYA HOSTING)</a>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-img-container">
+            <img src="./assets/images/Course.png" alt="Course Project" class="portfolio-img">
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Course Platform</h3>
+            <p class="portfolio-description">
+              The Course Platform is designed for delivering online courses with an intuitive user interface, including course management and user progress tracking.
+            </p>
+            <a href="#" class="portfolio-link">View ProjectBELUM SAYA HOSTING)</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+<!-- #SKILLS -->
+<section class="section" id="skills">
+  <div class="container skills-container">
+    <h2 class="section-title h2">Skill Saya</h2>
+    <div class="skills-list">
+      <div class="skill-card html">
+        <i class="fab fa-html5 skill-icon"></i>
+        <h3 class="skill-title">HTML5</h3>
+      </div>
+      <div class="skill-card css">
+        <i class="fab fa-css3-alt skill-icon"></i>
+        <h3 class="skill-title">CSS3</h3>
+      </div>
+      <div class="skill-card js">
+        <i class="fab fa-js skill-icon"></i>
+        <h3 class="skill-title">JavaScript</h3>
+      </div>
+      <div class="skill-card php">
+        <i class="fab fa-php skill-icon"></i>
+        <h3 class="skill-title">PHP</h3>
+      </div>
+      <!-- Tambah skill lain sesuai kebutuhan -->
+    </div>
+  </div>
+</section>
+
+<!-- #CONTACT -->
+<section class="section" id="contact">
+  <div class="container contact-container">
+    <div class="contact-inner">
+      <!-- Formulir Kontak -->
+      <form class="contact-form">
+        <h2 class="section-title">Kontak</h2>
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+        
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+        
+        <button type="submit">Kirim Pesan</button>
+      </form>  
+    </div>
+  </div>
+</section>
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+     
+  
+      <p class="copyright">
+        &copy; 2024 <a href="#" class="copyright-link">ALFIN</a>. All Rights Reserved
+      </p>
+  
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">Terms & Condition</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+  </footer>
+  
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
